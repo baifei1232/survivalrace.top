@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Race - Top Online Survival Games | Free Browser Games | survivalrace.top</title>
+  <meta name="description" content="Play the best free online survival games at SurvivalRace.top. Battle royale, zombie survival, open world, and more thrilling survival games in your browser.">
+  <link rel="canonical" href="https://survivalrace.top">
+  <!-- Enhanced SEO Meta Tags -->
+  <meta name="keywords" content="survival games, battle royale games, zombie survival games, online survival games, free browser games, no download games, multiplayer survival games">
+  <meta property="og:title" content="Survival Race - Ultimate Online Survival Games Collection">
+  <meta property="og:description" content="Play the best free online survival games. Battle royale, zombie apocalypse, wilderness survival, and space adventure games with no download required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://survivalrace.top">
+  <meta property="og:image" content="https://survivalrace.top/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Survival Race - Free Online Survival Games">
+  <meta name="twitter:description" content="Play free survival games online. No download required. Test your survival skills now!">
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Survival Race",
+      "url": "https://survivalrace.top",
+      "description": "Play the best free online survival games at SurvivalRace.top. Battle royale, zombie survival, open world, and more thrilling survival games in your browser.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://survivalrace.top/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/api/placeholder/32/32">
+  <style>
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      /* Color Palette inspired by the image */
+      --primary: #8c13fe;        /* Vibrant purple from logo */
+      --primary-hover: #7511d2;  /* Darker purple */
+      --secondary: #ff3a30;      /* Red/Orange accent */
+      --accent: #ff9a00;         /* Orange accent */
+      --dark: #0a0a0a;           /* Near black background */
+      --darker: #050505;         /* Deeper background */
+      --dark-navy: #0f1923;      /* Dark navy blue */
+      --light: #f8f8f8;          /* Light text/elements */
+      --gray: #a0a0a0;           /* Gray text */
+      --gray-dark: #333;         /* Dark gray */
+      --card-bg: #111520;        /* Card background */
+      --card-hover: #1a202e;     /* Card hover */
+      --header-bg: rgba(10, 10, 10, 0.95); /* Semi-transparent header */
+      --gradient-hero: linear-gradient(135deg, var(--primary) 10%, #ff3a30 90%);
+      --gradient-text: linear-gradient(90deg, #8c13fe 0%, #ff3a30 100%);
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: var(--header-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    
+    .logo-text {
+      margin-left: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--light);
+      text-decoration: none;
+    }
+    
+    .logo-highlight {
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav ul li {
+      margin-left: 30px;
+    }
+    
+    nav ul li a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 0;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      color: var(--secondary);
+    }
+    
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--secondary);
+      transition: width 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+    
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--light);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    /* Hero Section - Modified as requested */
+    .hero {
+      background-color: var(--dark-navy);
+      text-align: center;
+      padding: 120px 20px;
+      margin-bottom: 60px;
+    }
+    
+    .hero-logo {
+      margin-bottom: 30px;
+      display: inline-block;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--light);
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: var(--light);
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background-color: var(--secondary);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    /* Game Sections */
+    .game-section {
+      margin-bottom: 80px;
+    }
+    
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .game-card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+    
+    .game-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+      background-color: var(--card-hover);
+    }
+    
+    .game-thumbnail {
+      width: 100%;
+      height: 180px;
+      background-color: var(--gray-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .game-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .game-card:hover .game-thumbnail img {
+      transform: scale(1.05);
+    }
+    
+    .game-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: var(--accent);
+      color: var(--light);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .featured-badge {
+      background-color: var(--primary);
+    }
+    
+    .game-info {
+      padding: 20px;
+    }
+    
+    .game-title {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: var(--light);
+    }
+    
+    .game-description {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    
+    .play-button {
+      display: inline-block;
+      background-color: var(--secondary);
+      color: var(--light);
+      text-decoration: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      width: 100%;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .play-button:hover {
+      background-color: #e02d24;
+    }
+    
+    /* Categories and Search */
+    .categories-container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    
+    .categories-wrapper {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--secondary) var(--card-bg);
+      max-width: 75%;
+    }
+    
+    .categories-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+    
+    .categories-wrapper::-webkit-scrollbar-track {
+      background: var(--card-bg);
+      border-radius: 10px;
+    }
+    
+    .categories-wrapper::-webkit-scrollbar-thumb {
+      background-color: var(--secondary);
+      border-radius: 10px;
+    }
+    
+    .category-button {
+      padding: 8px 20px;
+      background-color: var(--card-bg);
+      color: var(--light);
+      border: none;
+      border-radius: 20px;
+      margin-right: 10px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .category-button:hover {
+      background-color: var(--card-hover);
+    }
+    
+    .category-button.active {
+      background-color: var(--primary);
+    }
+    
+    .search-container {
+      display: flex;
+      min-width: 220px;
+    }
+    
+    .search-input {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px 0 0 20px;
+      width: 100%;
+      background-color: var(--card-bg);
+      color: var(--light);
+      outline: none;
+    }
+    
+    .search-button {
+      background-color: var(--primary);
+      color: var(--light);
+      border: none;
+      border-radius: 0 20px 20px 0;
+      padding: 8px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .search-button:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    /* About Section */
+    .about-section {
+      background-color: var(--darker);
+      padding: 80px 0;
+      margin-bottom: 80px;
+    }
+    
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+    
+    .stat-card {
+      background-color: var(--card-bg);
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: var(--secondary);
+    }
+    
+    .stat-label {
+      font-size: 1rem;
+      color: var(--gray);
+    }
+    
+    /* FAQ Section */
+    .faq-section {
+      margin-bottom: 80px;
+    }
+    
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 15px;
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+    
+    .faq-question:hover {
+      background-color: var(--card-hover);
+    }
+    
+    .faq-answer {
+      display: none;
+      padding: 0 20px 20px;
+      color: var(--gray);
+    }
+    
+    .faq-answer.active {
+      display: block;
+    }
+    
+    /* Footer - Improved visibility */
+    footer {
+      background-color: var(--darker);
+      padding: 60px 0 30px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-column h3 {
+      color: var(--light);
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      position: relative;
+    }
+    
+    .footer-column h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 30px;
+      height: 2px;
+      background-color: var(--secondary);
+    }
+    
+    .footer-column ul {
+      list-style: none;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 12px;
+    }
+    
+    .footer-column ul li a {
+      color: var(--light);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 0.95rem;
+    }
+    
+    .footer-column ul li a:hover {
+      color: var(--secondary);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      background-color: var(--card-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: var(--light);
+      font-size: 0.95rem;
+    }
+    
+    .seo-content {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+      color: var(--gray);
+      text-align: left;
+      line-height: 1.5;
+    }
+    
+    .seo-content h3 {
+      color: var(--light);
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    
+    .seo-content p {
+      margin-bottom: 10px;
+    }
+    
+    /* Game Modal */
+    .game-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 2000;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    
+    .modal-content {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      max-width: 1000px;
+      margin: 40px auto;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .modal-title {
+      font-size: 1.5rem;
+      color: var(--light);
+    }
+    
+    .close-modal {
+      background: none;
+      border: none;
+      color: var(--light);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    
+    .close-modal:hover {
+      color: var(--secondary);
+    }
+    
+    .modal-body {
+      padding: 20px;
+    }
+    
+    .game-description-full {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .game-iframe-container {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    .game-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+    
+    /* Custom Survival Race Logo */
+    .custom-logo {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: block;
+      }
+      
+      nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--darker);
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      nav.active {
+        display: block;
+      }
+      
+      nav ul {
+        flex-direction: column;
+      }
+      
+      nav ul li {
+        margin: 0 0 15px 0;
+      }
+      
+      .hero {
+        padding: 80px 20px;
+      }
+      
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .categories-container {
+        flex-direction: column;
+      }
+      
+      .categories-wrapper {
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+      
+      .search-container {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .section-title {
+        font-size: 1.6rem;
+      }
+      
+      .games-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <img src="/api/placeholder/40/40" alt="Survival Race Logo" width="40" height="40">
+          <span class="logo-text">Survival<span class="logo-highlight">Race</span></span>
+        </a>
+        
+        <button class="mobile-menu-toggle" id="menuToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#featured-games">Featured Games</a></li>
+            <li><a href="#all-games">All Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <!-- Custom SVG Logo -->
+      <div class="hero-logo">
+        <svg class="custom-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#8c13fe" />
+              <stop offset="100%" stop-color="#ff3a30" />
+            </linearGradient>
+          </defs>
+          <rect x="10" y="10" width="80" height="80" rx="10" fill="#111520" />
+          <path d="M50 20 L70 40 L60 40 L60 80 L40 80 L40 40 L30 40 Z" fill="url(#logo-gradient)" />
+          <circle cx="50" cy="35" r="5" fill="#ffffff" />
+        </svg>
+      </div>
+      <h1>Ultimate Survival Gaming Experience</h1>
+      <p>Battle for resources, fight off enemies, and be the last one standing. Experience the thrill of survival across multiple immersive game worlds.</p>
+    </div>
+  </section>
+  
+  <section id="featured-games" class="game-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Games</h2>
+      </div>
+      
+      <div class="games-grid">
+        <div class="game-card">
+          <div class="game-thumbnail">
+            <img src="/api/placeholder/400/200" alt="Battle Royale">
+            <div class="game-badge featured-badge">Featured</div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Battle Royale</h3>
+            <p class="game-description">Drop into an intense battlefield where only one can survive. Scavenge for weapons, eliminate opponents, and claim victory as the last player standing.</p>
+            <a href="#" class="play-button" data-game="battle-royale">Play Now</a>
+          </div>
+        </div>
+        
+        <div class="game-card">
+          <div class="game-thumbnail">
+            <img src="/api/placeholder/400/200" alt="Zombie Apocalypse">
+            <div class="game-badge featured-badge">Featured</div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Zombie Apocalypse</h3>
+            <p class="game-description">Survive in a world overrun by the undead. Scavenge for supplies, build fortifications, and fight to stay alive in this post-apocalyptic nightmare.</p>
+            <a href="#" class="play-button" data-game="zombie">Play Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Survival Race</h3>
+          <p style="color: #f0f0f0; margin-bottom: 15px; max-width: 250px;">The ultimate destination for free online survival games. No downloads required, play directly in your browser.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#featured-games">Featured Games</a></li>
+            <li><a href="#all-games">All Games</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#" data-category="battle-royale">Battle Royale</a></li>
+            <li><a href="#" data-category="zombie">Zombie Survival</a></li>
+            <li><a href="#" data-category="open-world">Open World</a></li>
+            <li><a href="#" data-category="crafting">Crafting</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:info@survivalrace.top">info@survivalrace.top</a></li>
+            <li><a href="#">Submit a Game</a></li>
+            <li><a href="#">Report a Bug</a></li>
+            <li><a href="#">Partner With Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SurvivalRace.top | All Rights Reserved</p>
+        <p style="margin-top: 10px;">
+          <a href="/privacy" style="color: #f0f0f0; margin-right: 20px; text-decoration: none;">Privacy Policy</a>
+          <a href="/terms" style="color: #f0f0f0; text-decoration: none;">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Game Modal -->
+  <div id="gameModal" class="game-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="gameTitle">Game Title</h3>
+        <button class="close-modal" id="closeModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="game-description-full" id="gameDescription"></p>
+        <div class="game-iframe-container">
+          <iframe id="gameIframe" class="game-iframe" src="" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+    
+    // Category Filter
+    const categoryButtons = document.querySelectorAll('.category-button');
+    const gameCards = document.querySelectorAll('.game-card');
+    
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Get selected category
+        const category = button.getAttribute('data-category');
+        
+        // Filter games
+        gameCards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Footer category links
+    const categoryLinks = document.querySelectorAll('.footer-column a[data-category]');
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const category = link.getAttribute('data-category');
+        
+        // Find and click the corresponding category button
+        const categoryButton = document.querySelector(`.category-button[data-category="${category}"]`);
+        if (categoryButton) {
+          categoryButton.click();
+          
+          // Scroll to games section
+          document.getElementById('all-games').scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    
+    // FAQ Toggle
+    function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      const isOpen = answer.classList.contains('active');
+      
+      // Close all open FAQs
+      document.querySelectorAll('.faq-answer').forEach(ans => {
+        ans.classList.remove('active');
+      });
+      
+      // Open clicked FAQ if it wasn't already open
+      if (!isOpen) {
+        answer.classList.add('active');
+      }
+    }
+    
+    // Game Search
+    const searchInput = document.getElementById('gameSearch');
+    const searchButton = document.querySelector('.search-button');
+    
+    function performSearch() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      
+      if (searchTerm === '') {
+        // If search is empty, show all games
+        document.querySelector('.category-button[data-category="all"]').click();
+        return;
+      }
+      
+      // Hide all games first
+      gameCards.forEach(card => {
+        card.style.display = 'none';
+      });
+      
+      // Show games that match the search term
+      gameCards.forEach(card => {
+        const title = card.querySelector('.game-title').textContent.toLowerCase();
+        const description = card.querySelector('.game-description').textContent.toLowerCase();
+        
+        if (title.includes(searchTerm) || description.includes(searchTerm)) {
+          card.style.display = 'block';
+        }
+      });
+      
+      // Deactivate all category buttons
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+    }
+    
+    searchButton.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+    
+    // Game Modal
+    const gameModal = document.getElementById('gameModal');
+    const closeModal = document.getElementById('closeModal');
+    const gameTitle = document.getElementById('gameTitle');
+    const gameDescription = document.getElementById('gameDescription');
+    const gameIframe = document.getElementById('gameIframe');
+    
+    // Game data - This would normally be loaded from a database or API
+    const gameData = {
+      'battle-royale': {
+        title: 'Battle Royale',
+        description: 'Drop into an intense battlefield where only one can survive. Scavenge for weapons, eliminate opponents, and claim victory as the last player standing. The game features a shrinking play zone, forcing confrontations as the match progresses. Adapt your strategy based on the available weapons, terrain, and the positions of other players to become the champion.',
+        url: 'https://www.example.com/game1'
+      },
+      'zombie': {
+        title: 'Zombie Apocalypse',
+        description: 'Survive in a world overrun by the undead. Scavenge for supplies, build fortifications, and fight to stay alive in this post-apocalyptic nightmare. Manage your resources carefully, as ammunition and medical supplies are scarce. Team up with other survivors or go solo in this intense survival experience where one mistake could be your last.',
+        url: 'https://www.example.com/game2'
+      },
+      'wilderness': {
+        title: 'Wilderness Explorer',
+        description: 'Navigate through harsh natural environments from dense forests to freezing tundras. Hunt wildlife, gather resources, craft tools and shelter, and battle the elements to stay alive. Each environment presents unique challenges requiring different survival strategies. Monitor your hunger, thirst, body temperature, and energy levels in this realistic survival simulation.',
+        url: 'https://www.example.com/game3'
+      },
+      'island': {
+        title: 'Island Survival',
+        description: 'Stranded on a deserted island, gather resources to craft tools, build shelter, and find food. Explore the island\'s mysteries and find a way to escape. Fish in the ocean, hunt wild animals, collect fruits, and purify water to sustain yourself. Build increasingly complex structures as you develop your survival skills, and uncover the secrets of why you were stranded.',
+        url: 'https://www.example.com/game4'
+      }
+    };
+    
+    // Open game modal
+    const playButtons = document.querySelectorAll('.play-button');
+    playButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const gameId = button.getAttribute('data-game');
+        const game = gameData[gameId];
+        
+        if (game) {
+          gameTitle.textContent = game.title;
+          gameDescription.textContent = game.description;
+          gameIframe.src = game.url;
+          gameModal.style.display = 'block';
+          document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+      });
+    });
+    
+    // Close game modal
+    closeModal.addEventListener('click', () => {
+      gameModal.style.display = 'none';
+      gameIframe.src = '';
+      document.body.style.overflow = 'auto'; // Restore scrolling
+    });
+    
+    // Close modal when clicking outside the content
+    gameModal.addEventListener('click', (e) => {
+      if (e.target === gameModal) {
+        closeModal.click();
+      }
+    });
+    
+    // Close modal with escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && gameModal.style.display === 'block') {
+        closeModal.click();
+      }
+    });
+  </script>
+</body>
+</html>  <section id="all-games" class="game-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">All Survival Games</h2>
+      </div>
+      
+      <div class="categories-container">
+        <div class="categories-wrapper">
+          <button class="category-button active" data-category="all">All Games</button>
+          <button class="category-button" data-category="battle-royale">Battle Royale</button>
+          <button class="category-button" data-category="zombie">Zombie</button>
+          <button class="category-button" data-category="open-world">Open World</button>
+          <button class="category-button" data-category="crafting">Crafting</button>
+        </div>
+        
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search games..." id="gameSearch">
+          <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="games-grid">
+        <div class="game-card" data-category="battle-royale">
+          <div class="game-thumbnail">
+            <img src="/api/placeholder/400/200" alt="Battle Royale">
+            <div class="game-badge">Battle Royale</div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Battle Royale</h3>
+            <p class="game-description">Drop into an intense battlefield where only one can survive. Scavenge for weapons, eliminate opponents, and claim victory as the last player standing.</p>
+            <a href="#" class="play-button" data-game="battle-royale">Play Now</a>
+          </div>
+        </div>
+        
+        <div class="game-card" data-category="zombie">
+          <div class="game-thumbnail">
+            <img src="/api/placeholder/400/200" alt="Zombie Apocalypse">
+            <div class="game-badge">Zombie</div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Zombie Apocalypse</h3>
+            <p class="game-description">Survive in a world overrun by the undead. Scavenge for supplies, build fortifications, and fight to stay alive in this post-apocalyptic nightmare.</p>
+            <a href="#" class="play-button" data-game="zombie">Play Now</a>
+          </div>
+        </div>
+        
+        <div class="game-card" data-category="open-world">
+          <div class="game-thumbnail">
+            <img src="/api/placeholder/400/200" alt="Wilderness Explorer">
+            <div class="game-badge">Open World</div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Wilderness Explorer</h3>
+            <p class="game-description">Navigate through harsh natural environments from dense forests to freezing tundras. Hunt, craft, and build shelters while battling the elements.</p>
+            <a href="#" class="play-button" data-game="wilderness">Play Now</a>
+          </div>
+        </div>
+        
+        <div class="game-card" data-category="crafting">
+          <div class="game-thumbnail">
+            <img src="/api/placeholder/400/200" alt="Island Survival">
+            <div class="game-badge">Crafting</div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Island Survival</h3>
+            <p class="game-description">Stranded on a deserted island, gather resources to craft tools, build shelter, and find food. Explore the island's mysteries and find a way to escape.</p>
+            <a href="#" class="play-button" data-game="island">Play Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Survival Race</h2>
+      </div>
+      
+      <div class="about-content">
+        <p>Survival Race is the ultimate destination for online survival gaming enthusiasts. We curate the best free-to-play survival games from across the web, offering an immersive experience for players who love the thrill of survival challenges.</p>
+        <p class="mt-4">Our platform features a diverse collection of survival games, from intense battle royales to zombie apocalypse scenarios, wilderness adventures, and resource management challenges. Whether you prefer solo gameplay or multiplayer competitions, you'll find something that tests your survival skills.</p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Premium Games</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-number">250K+</div>
+            <div class="stat-label">Monthly Players</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Free to Play</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do I need to create an account to play?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>No, most games on Survival Race can be played without creating an account. However, some games may offer additional features like saving progress or multiplayer functionality that require registration.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Are the games free to play?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, all games on Survival Race are completely free to play. You can enjoy the full gaming experience without spending any money. Some games may offer optional in-game purchases, but they are not required to play.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can I play these games on mobile devices?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, all our games are optimized for both desktop and mobile play. The experience may vary slightly based on your device, but they are designed to be responsive and playable across different screen sizes.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do I need to download any software?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>No, all games on Survival Race are browser-based and do not require any downloads or installations. Just click "Play Now" and start playing instantly in your web browser.</p>
+          </div>
+        </div>
+        
+        <!-- SEO Content moved here from footer -->
+        <div class="faq-item" style="margin-top: 40px;">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Best Online Survival Games to Play in 2025</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>SurvivalRace.top offers the ultimate collection of free online survival games that you can play directly in your browser. Our curated selection includes battle royale games, zombie survival adventures, open world exploration, and crafting challenges that will test your survival skills to the limit.</p>
+            
+            <p>Whether you're looking for intense PvP action in battle royale mode, cooperative gameplay in zombie survival, or a relaxing crafting experience, our platform has something for everyone. All games are optimized for both desktop and mobile play, ensuring you can enjoy your favorite survival games anywhere, anytime.</p>
+            
+            <p>Our free-to-play games require no downloads or installations - simply click and play instantly. Join thousands of players worldwide in the ultimate survival gaming experience at SurvivalRace.top.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Popular Survival Game Categories</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Battle Royale Games:</strong> Drop into intense last-man-standing competitions where you'll need to scavenge for weapons, eliminate opponents, and be the last survivor to claim victory.</p>
+            
+            <p><strong>Zombie Survival Games:</strong> Test your survival skills in post-apocalyptic worlds overrun by the undead. Scavenge for supplies, build fortifications, and fight to stay alive against hordes of zombies.</p>
+            
+            <p><strong>Open World Survival Games:</strong> Explore vast environments from dense forests to freezing tundras. Hunt wildlife, gather resources, and build shelters while battling the elements in these immersive open-world experiences.</p>
+            
+            <p><strong>Crafting Survival Games:</strong> Gather resources and craft tools, weapons, and structures to survive in hostile environments. These games emphasize resource management and creativity in the face of survival challenges.</p>
+          </div>
+        </div>
